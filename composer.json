@@ -1,0 +1,27 @@
+{
+    "name": "maree/fawry",
+    "description": "package to pay with fawry payment services",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mohamed maree",
+            "email": "m7mdmaree26@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Maree\\Fawry\\" : "src/",
+            "Maree\\Fawry\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maree\\Fawry\\FawryServiceProvider"
+            ]
+        }
+    }  
+}
