@@ -18,7 +18,7 @@ then change your fawry config from config/fawry.php file
 ```
 ## Usage
 
-## createCardToken
+## create Card Token
 
 ```php
 use Maree\Fawry\Fawry;
@@ -28,7 +28,7 @@ Fawry::createCardToken($customer_data = [], $card_data = []);
 
 ```
 
-## listCustomerTokens
+## list Customer Tokens
 
 ```php
 use Maree\Fawry\Fawry;
@@ -36,7 +36,7 @@ Fawry::listCustomerTokens($customer_id);
 
 ```
 
-## deleteCardToken
+## delete Card Token
 
 ```php
 use Maree\Fawry\Fawry;
@@ -44,7 +44,7 @@ Fawry::deleteCardToken($customer_id='', $customer_card_token='');
 
 ```
 
-## payByCardToken
+## pay By Card Token
 
 ```php
 use Maree\Fawry\Fawry;
@@ -52,7 +52,7 @@ Fawry::payByCardToken($merchantRefNum='', $customer_card_token='', $customer_dat
 
 ```
 
-## payByCardToken3DS
+## pay By Card Token 3DS
 
 ```php
 use Maree\Fawry\Fawry;
@@ -61,7 +61,7 @@ Fawry::payByCardToken3DS($merchantRefNum='', $customer_card_token='', $cvv='', $
 
 ```
 
-## payByCard
+## pay By Card
 
 ```php
 use Maree\Fawry\Fawry;
@@ -71,7 +71,7 @@ Fawry::payByCard($merchantRefNum='', $card_data = [], $customer_data = [], $amou
 
 ```
 
-## payByCard3DS
+## pay By Card 3DS
 
 ```php
 use Maree\Fawry\Fawry;
@@ -81,7 +81,7 @@ Fawry::payByCard3DS($merchantRefNum='', $card_data = [], $customer_data = [], $a
 
 ```
 
-## chargeViaFawry
+## charge Via Fawry
 
 ```php
 use Maree\Fawry\Fawry;
@@ -99,7 +99,7 @@ Fawry::refund($referenceNumber='', $refundAmount=1, $reason = '');
 
 ```
 
-## cancelUnpaidPayment
+## cancel Unpaid Payment
 
 ```php
 use Maree\Fawry\Fawry;
