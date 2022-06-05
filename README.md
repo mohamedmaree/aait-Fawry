@@ -9,7 +9,7 @@ composer require maree/fawry
 Publish your fawry config file with
 
 ```bash
-php artisan vendor:publish --provider="maree\Fawry\FawryServiceProvider" --tag="fawry"
+php artisan vendor:publish --provider="Maree\Fawry\FawryServiceProvider" --tag="fawry"
 ```
 then change your fawry config from config/fawry.php file
 ```php
