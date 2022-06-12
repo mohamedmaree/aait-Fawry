@@ -3,8 +3,8 @@ namespace Maree\Fawry;
 
 class Fawry {
 
-    //$customer_data = ['customer_id' => '1', 'customer_mobile' => '010027*****', 'customer_email' => 'm7mdmaree26@gmail.com'];
-    //$card_data     = ['card_number' => '1111111111111','expiry_year' => 2023, 'expiry_month' => '05', 'cvv' => '123', 'is_default' => false];
+    // $customer_data = ['customer_id' => '1','customer_name'=>'maree' ,'customer_mobile' => '01002700084', 'customer_email' => 'm7mdmaree26@gmail.com'];
+    // $card_data     = ['card_number' => '1111111111111','card_expiry_year' => '2023','expiry_year' => '2023' ,'expiry_month' => '05', 'card_expiry_month' => '05', 'cvv' => '123', 'is_default' => false];
     public static function createCardToken($customer_data = [], $card_data = []) {
         $url = config('fawry.mode') == 'live' ? config('fawry.live_urls')['create_card_token_url'] : config('fawry.test_urls')['create_card_token_url'];
         $client    = new \GuzzleHttp\Client();
